@@ -36,21 +36,22 @@ public class Pizza {
     }
     public String billGenerate(){
         if(vegCheck){
-            bill+=("Base pizza: "+basePrice);
+            bill+=(" | Base pizza: "+basePrice+"      |");
         }
         if(vegCheck==false){
-            bill+=("Base pizza: "+(basePrice+100));
+            bill+=(" | Base pizza: "+(basePrice+100)+"      |");
         }
         if(isExtraCheeseAdded){
-            bill+="\nExtra Cheese: "+extraCheesPrice;
+            bill+="\n | Extra Cheese: "+extraCheesPrice+"    |";
         } 
         if(isExtraToppingsAdded){
-            bill+="\nExtra Toppings: "+extraToppingPrice;
+            bill+="\n | Extra Toppings: "+extraToppingPrice+"  |";
         }
         if(isTakeAwayAdded){
-            bill+="\nPacking Charges: "+backPack;
+            bill+="\n | Packing Charges: "+backPack+"  |";
         }
-        bill+="\n------------------------------\nTotal bill: "+this.price;
+        bill+="\n +----------------------+\n | Total bill: "+this.price;
+        bill+="      |\n +----------------------+";
         return bill;
     }
 }

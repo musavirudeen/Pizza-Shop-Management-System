@@ -61,11 +61,11 @@ public class App {
                                 default:
                                     break;
                             }
-                            System.out.println("--------Bill----------");
+                            System.out.println(" +----------------------+\n |        Bill          |\n +----------------------+");
                             System.out.println(p1.billGenerate());    
                             break;
                         case "2":
-                            System.out.println("Order Pizza:\n---------------\n1. Veg Pizza\n2.Non-veg Pizza\n3.Back\nEnter Number:");
+                            System.out.println("\nOrder Pizza:\n---------------\n1. Veg Pizza\n2.Non-veg Pizza\n3.Back\nEnter Number:");
                             String choice5=input.next();
                             switch (choice5) {
                                 case "1":
@@ -92,7 +92,7 @@ public class App {
                                 default:
                                     break;
                             }    
-                            System.out.println("-------------Bill---------");
+                            System.out.println(" +----------------------+\n |        Bill          |\n +--------------------=-+");
                             System.out.println(d1.billGenerate()); 
                             break;
                         case "3":
